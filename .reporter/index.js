@@ -73,6 +73,7 @@ module.exports = function report(data) {
               }
             }
             if(lastRun[test.testFilePath].passing != test.numPassingTests || lastRun[test.testFilePath].tries == 0) {
+              console.log('AJHGFAWYFASYFGKSFYGKSDJGFKAS',lastRun, test.numPassingTests)
               const tries = lastRun[test.testFilePath].tries;
               lastRun[test.testFilePath].passing = test.numPassingTests;
               lastRun[test.testFilePath].tries = 1;
